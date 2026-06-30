@@ -1,0 +1,7 @@
+[
+  { "id": "blended", "name": "Blended Collection", "description": "Premium blended fabrics", "visible": true },
+  { "id": "cotton", "name": "Cotton Collection", "description": "Pure cotton fabrics", "visible": true },
+  { "id": "winter", "name": "Winter Collection", "description": "Warm winter fabrics", "visible": true },
+  { "id": "summer", "name": "Summer Collection", "description": "Lightweight summer fabrics", "visible": true },
+  { "id": "eid", "name": "Eid Collection", "description": "Festive Eid fabrics", "visible": true }
+]

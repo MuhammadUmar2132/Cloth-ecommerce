@@ -1,0 +1,58 @@
+{
+  "announcement": "ORDERS PLACED AFTER 21ST MAY WILL BE DELIVERED AFTER EID",
+  "announcementVisible": true,
+  "navbar": {
+    "logo": "ZEPHYR",
+    "links": [
+      { "id": "1", "label": "Home", "href": "/" },
+      { "id": "2", "label": "Collections", "href": "/collections", "dropdown": [
+        { "label": "Blended", "href": "/collections/blended" },
+        { "label": "Cotton", "href": "/collections/cotton" },
+        { "label": "Dobby Design", "href": "/collections/dobby" },
+        { "label": "Winter", "href": "/collections/winter" },
+        { "label": "Kurta", "href": "/collections/kurta" }
+      ]},
+      { "id": "3", "label": "Summer Collection", "href": "/collections/summer" },
+      { "id": "4", "label": "Eid Collection", "href": "/collections/eid" },
+      { "id": "5", "label": "About", "href": "/about" },
+      { "id": "6", "label": "Contact", "href": "/contact" }
+    ]
+  },
+  "hero": {
+    "slides": [
+      { "id": "1", "title": "Summer Collection", "subtitle": "Lightweight fabrics for the season", "buttonText": "Shop Now", "buttonLink": "/collections/summer", "bgColor": "#1a1a2e", "textColor": "#ffffff" },
+      { "id": "2", "title": "Eid Collection", "subtitle": "Celebrate in style", "buttonText": "Explore", "buttonLink": "/collections/eid", "bgColor": "#16213e", "textColor": "#ffffff" }
+    ],
+    "autoplay": true,
+    "interval": 4000
+  },
+  "newsletter": {
+    "heading": "Join our mailing list",
+    "subheading": "for the latest product info & more",
+    "buttonText": "Subscribe",
+    "bgColor": "#1a1a2e",
+    "textColor": "#ffffff"
+  },
+  "footer": {
+    "companyName": "ZEPHYR Textiles Ltd.",
+    "address": "Lahore, Pakistan",
+    "phone": "+92-300-0000000",
+    "email": "info@zephyr.com.pk",
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "Summer Collection", "href": "/collections/summer" },
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "infoLinks": [
+      { "label": "Terms & Conditions", "href": "/terms" },
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Refund Policy", "href": "/refund" }
+    ],
+    "social": {
+      "facebook": "https://facebook.com/zephyr",
+      "instagram": "https://instagram.com/zephyr"
+    },
+    "copyright": "© 2024 ZEPHYR Textiles Ltd. All rights reserved."
+  }
+}
