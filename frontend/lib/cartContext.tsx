@@ -38,20 +38,20 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('zephyr_cart')
+      const saved = localStorage.getItem('cavenro_cart') || localStorage.getItem('zephyr_cart')
       if (saved) setCartItems(JSON.parse(saved))
-      const savedWish = localStorage.getItem('zephyr_wishlist')
+      const savedWish = localStorage.getItem('cavenro_wishlist') || localStorage.getItem('zephyr_wishlist')
       if (savedWish) setWishlist(JSON.parse(savedWish))
     } catch {}
     setReady(true)
   }, [])
 
   useEffect(() => {
-    if (ready) localStorage.setItem('zephyr_cart', JSON.stringify(cartItems))
+    if (ready) localStorage.setItem('cavenro_cart', JSON.stringify(cartItems))
   }, [cartItems, ready])
 
   useEffect(() => {
-    if (ready) localStorage.setItem('zephyr_wishlist', JSON.stringify(wishlist))
+    if (ready) localStorage.setItem('cavenro_wishlist', JSON.stringify(wishlist))
   }, [wishlist, ready])
 
   const addToCart = (item: CartItem) => {

@@ -9,7 +9,7 @@ export function OrganizationJsonLd({ seo, footer }: OrganizationLdProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: footer?.companyName || 'ZEPHYR Textiles Ltd.',
+    name: footer?.companyName || 'CAVENRO Textiles Ltd.',
     url: canonical,
     logo: seo?.ogImage ? `${canonical}${seo.ogImage}` : canonical,
     description: seo?.description || '',
@@ -57,7 +57,7 @@ export function ProductJsonLd({ product, canonical }: ProductLdProps) {
       availability: product.soldOut
         ? 'https://schema.org/OutOfStock'
         : 'https://schema.org/InStock',
-      seller: { '@type': 'Organization', name: 'ZEPHYR Textiles Ltd.' },
+      seller: { '@type': 'Organization', name: 'CAVENRO Textiles Ltd.' },
     },
   }
 

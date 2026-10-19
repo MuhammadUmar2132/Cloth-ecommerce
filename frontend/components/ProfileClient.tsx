@@ -272,7 +272,7 @@ function OrderSlip({ order, onClose }: { order: Order; onClose: () => void }) {
       >
         {/* Slip Header */}
         <div className="bg-primary text-white text-center py-5 px-6">
-          <p className="font-serif text-lg font-bold tracking-[0.3em] uppercase">ZEPHYR</p>
+          <p className="font-serif text-lg font-bold tracking-[0.3em] uppercase">CAVENRO</p>
           <p className="text-xs text-white/70 mt-1 tracking-wider uppercase">Order Receipt</p>
         </div>
 
@@ -332,7 +332,7 @@ function OrderSlip({ order, onClose }: { order: Order; onClose: () => void }) {
 
           {/* Footer */}
           <div className="border-t border-dashed border-gray-200 mt-5 pt-4 text-center text-xs text-gray-400">
-            <p>Thank you for shopping with ZEPHYR</p>
+            <p>Thank you for shopping with CAVENRO</p>
           </div>
         </div>
 

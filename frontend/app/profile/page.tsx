@@ -7,7 +7,7 @@ import ProfileClient from '@/components/ProfileClient'
 export default async function ProfilePage() {
   let siteData: any = null
   try { siteData = await getSiteData() } catch {}
-  const nav    = siteData?.navbar ?? { logo: 'ZEPHYR', links: [] }
+  const nav    = siteData?.navbar ?? { logo: 'CAVENRO', links: [] }
   const footer = siteData?.footer ?? {}
   return (
     <main>

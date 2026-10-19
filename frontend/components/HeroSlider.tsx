@@ -61,7 +61,7 @@ export default function HeroSlider({ slides, autoplay, interval }: HeroSliderPro
         )}
         <div className="relative z-10 max-w-2xl mx-auto">
           <p className="text-xs md:text-sm tracking-[0.4em] uppercase mb-4 opacity-80">
-            Zephyr Textiles
+            Cavenro Textiles
           </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
             {slide.title}

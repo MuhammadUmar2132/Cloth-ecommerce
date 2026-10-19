@@ -71,7 +71,7 @@ export default function AdminDashboard() {
     <div>
       <div className="mb-8">
         <h1 className="text-2xl font-serif font-bold text-gray-900">Dashboard</h1>
-        <p className="text-gray-500 text-sm mt-1">Welcome to the Zephyr admin panel</p>
+        <p className="text-gray-500 text-sm mt-1">Welcome to the CAVENRO admin panel</p>
       </div>
 
       {/* Stats */}

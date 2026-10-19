@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import CavenroLogo from '@/components/CavenroLogo'
 import { useCart } from '@/lib/cartContext'
 import { useAuth } from '@/lib/authContext'
 
@@ -69,26 +70,28 @@ export default function Navbar({ navbar }: NavbarProps) {
           </button>
 
           {/* Logo */}
-          <Link href="/" className="font-serif font-bold text-2xl md:text-3xl text-primary tracking-[0.3em] uppercase">
-            {navbar.logo}
+          <Link href="/" className="group flex items-center py-1 focus:outline-none" aria-label="CAVENRO Home">
+            <CavenroLogo customText={navbar?.logo} iconSize={36} />
           </Link>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8" ref={dropdownRef}>
-            {navbar.links.map((link) => (
-              <div key={link.id} className="relative">
-                {link.dropdown ? (
-                  <div
-                    onMouseEnter={() => setActiveDropdown(link.id)}
-                    onMouseLeave={() => setActiveDropdown(null)}
-                  >
+            {navbar.links.map((link, idx) => {
+              const linkKey = link.id || (link as any)._id || link.href || String(idx)
+              return (
+                <div key={linkKey} className="relative">
+                  {link.dropdown ? (
+                    <div
+                      onMouseEnter={() => setActiveDropdown(linkKey)}
+                      onMouseLeave={() => setActiveDropdown(null)}
+                    >
                     <button className="text-sm tracking-wider uppercase text-gray-700 hover:text-primary transition-colors py-1 flex items-center gap-1">
                       {link.label}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
-                    {activeDropdown === link.id && (
+                    {activeDropdown === linkKey && (
                       <div className="absolute left-0 top-full mt-1 bg-white border border-gray-200 shadow-lg min-w-[180px] z-50">
                         {link.dropdown.map((item) => (
                           <Link
@@ -111,7 +114,7 @@ export default function Navbar({ navbar }: NavbarProps) {
                   </Link>
                 )}
               </div>
-            ))}
+            )})}
           </div>
 
           {/* Right side actions */}
@@ -148,8 +151,8 @@ export default function Navbar({ navbar }: NavbarProps) {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 px-4 pb-4">
-          {navbar.links.map((link) => (
-            <div key={link.id}>
+          {navbar.links.map((link, idx) => (
+            <div key={link.id || (link as any)._id || link.href || String(idx)}>
               <Link
                 href={link.href}
                 className="block py-3 text-sm tracking-wider uppercase text-gray-700 hover:text-primary border-b border-gray-100"

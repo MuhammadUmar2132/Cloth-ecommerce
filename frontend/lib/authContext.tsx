@@ -40,16 +40,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     try {
-      const t = localStorage.getItem('zephyr_token')
-      const u = localStorage.getItem('zephyr_user')
+      const t = localStorage.getItem('cavenro_token') || localStorage.getItem('zephyr_token')
+      const u = localStorage.getItem('cavenro_user') || localStorage.getItem('zephyr_user')
       if (t && u) { setToken(t); setUser(JSON.parse(u)) }
     } catch {}
     setIsLoading(false)
   }, [])
 
   const persist = (t: string, u: AuthUser) => {
-    localStorage.setItem('zephyr_token', t)
-    localStorage.setItem('zephyr_user', JSON.stringify(u))
+    localStorage.setItem('cavenro_token', t)
+    localStorage.setItem('cavenro_user', JSON.stringify(u))
     setToken(t); setUser(u)
   }
 
@@ -76,6 +76,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   const logout = () => {
+    localStorage.removeItem('cavenro_token')
+    localStorage.removeItem('cavenro_user')
     localStorage.removeItem('zephyr_token')
     localStorage.removeItem('zephyr_user')
     setToken(null); setUser(null)
@@ -83,7 +85,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const updateUser = (u: AuthUser) => {
     setUser(u)
-    localStorage.setItem('zephyr_user', JSON.stringify(u))
+    localStorage.setItem('cavenro_user', JSON.stringify(u))
   }
 
   return (

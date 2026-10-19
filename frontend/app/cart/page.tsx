@@ -11,8 +11,8 @@ export default async function CartPage() {
   try { siteData = await getSiteData() } catch {
     siteData = {
       announcement: '', announcementVisible: false,
-      navbar: { logo: 'ZEPHYR', links: [] },
-      footer: { companyName: 'ZEPHYR', phone: '', email: '', address: '', quickLinks: [], infoLinks: [], social: {}, copyright: '' },
+      navbar: { logo: 'CAVENRO', links: [] },
+      footer: { companyName: 'CAVENRO', phone: '', email: '', address: '', quickLinks: [], infoLinks: [], social: {}, copyright: '' },
     }
   }
   return (

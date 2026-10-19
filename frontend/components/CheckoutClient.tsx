@@ -95,7 +95,7 @@ export default function CheckoutClient({ whatsapp }: { whatsapp: string }) {
         .join('\n')
 
       const msg = [
-        `🛒 *New Order — ZEPHYR*`,
+        `🛒 *New Order — CAVENRO*`,
         `Order No: *${saved.orderNumber}*`,
         '',
         itemLines,

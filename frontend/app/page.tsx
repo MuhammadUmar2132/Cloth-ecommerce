@@ -27,7 +27,7 @@ export default async function HomePage() {
       announcement: 'ORDERS PLACED AFTER 21ST MAY WILL BE DELIVERED AFTER EID',
       announcementVisible: true,
       navbar: {
-        logo: 'ZEPHYR',
+        logo: 'CAVENRO',
         links: [
           { id: '1', label: 'Home', href: '/' },
           { id: '2', label: 'Collections', href: '/collections', dropdown: [
@@ -56,14 +56,14 @@ export default async function HomePage() {
         textColor: '#ffffff'
       },
       footer: {
-        companyName: 'ZEPHYR Textiles Ltd.',
+        companyName: 'CAVENRO Textiles Ltd.',
         address: 'Lahore, Pakistan',
         phone: '+92-300-0000000',
-        email: 'info@zephyr.com.pk',
+        email: 'info@cavenro.com',
         quickLinks: [{ label: 'Home', href: '/' }],
         infoLinks: [{ label: 'Privacy Policy', href: '/privacy' }],
         social: { facebook: '', instagram: '' },
-        copyright: '© 2024 ZEPHYR Textiles Ltd. All rights reserved.'
+        copyright: '© 2024 CAVENRO Textiles Ltd. All rights reserved.'
       }
     }
   }

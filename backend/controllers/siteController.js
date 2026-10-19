@@ -3,12 +3,12 @@ const Site = require('../models/Site');
 const DEFAULT_SITE = {
   key: 'main',
   seo: {
-    siteTitle: 'ZEPHYR | Premium Pakistani Menswear Fabrics',
-    titleTemplate: '%s | ZEPHYR',
-    description: 'Discover premium quality menswear fabrics — blended, cotton, winter, and seasonal collections from ZEPHYR Textiles, Lahore.',
-    keywords: 'menswear fabric, Pakistani fabric, blended fabric, cotton fabric, winter fabric, Zephyr Textiles, Lahore fabric',
-    ogTitle: 'ZEPHYR | Premium Pakistani Menswear Fabrics',
-    ogDescription: 'Shop the finest menswear fabrics in Pakistan. Blended, Cotton, Winter & Eid collections available.',
+    siteTitle: 'CAVENRO | Premium Luxury Menswear Fabrics',
+    titleTemplate: '%s | CAVENRO',
+    description: 'Discover premium quality menswear fabrics — blended, cotton, winter, and seasonal collections from CAVENRO Textiles.',
+    keywords: 'menswear fabric, Pakistani fabric, blended fabric, cotton fabric, winter fabric, CAVENRO Textiles, luxury fabrics',
+    ogTitle: 'CAVENRO | Premium Luxury Menswear Fabrics',
+    ogDescription: 'Shop the finest menswear fabrics. Blended, Cotton, Winter & Eid collections available.',
     ogImage: '',
     twitterCard: 'summary_large_image',
     canonical: 'https://yourdomain.com',
@@ -18,7 +18,7 @@ const DEFAULT_SITE = {
   announcement: 'ORDERS PLACED AFTER 21ST MAY WILL BE DELIVERED AFTER EID',
   announcementVisible: true,
   navbar: {
-    logo: 'ZEPHYR',
+    logo: 'CAVENRO',
     links: [
       { label: 'Home', href: '/' },
       {
@@ -53,10 +53,10 @@ const DEFAULT_SITE = {
     textColor: '#ffffff',
   },
   footer: {
-    companyName: 'ZEPHYR Textiles Ltd.',
+    companyName: 'CAVENRO Textiles Ltd.',
     address: 'Lahore, Pakistan',
     phone: '+92-300-0000000',
-    email: 'info@zephyr.com.pk',
+    email: 'info@cavenro.com',
     quickLinks: [
       { label: 'Home', href: '/' },
       { label: 'Summer Collection', href: '/collections/summer' },
@@ -68,8 +68,8 @@ const DEFAULT_SITE = {
       { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Refund Policy', href: '/refund' },
     ],
-    social: { facebook: 'https://facebook.com/zephyr', instagram: 'https://instagram.com/zephyr' },
-    copyright: '© 2024 ZEPHYR Textiles Ltd. All rights reserved.',
+    social: { facebook: 'https://facebook.com/cavenro', instagram: 'https://instagram.com/cavenro' },
+    copyright: '© 2024 CAVENRO Textiles Ltd. All rights reserved.',
   },
 };
 

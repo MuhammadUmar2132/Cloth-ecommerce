@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { login } from '@/lib/api'
+import CavenroLogo from '@/components/CavenroLogo'
 
 export default function AdminLogin() {
   const router = useRouter()
@@ -29,11 +30,9 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen bg-primary flex items-center justify-center px-4">
       <div className="bg-white w-full max-w-md p-8 shadow-2xl">
-        <div className="text-center mb-8">
-          <h1 className="font-serif text-3xl font-bold text-primary tracking-[0.3em] uppercase">
-            ZEPHYR
-          </h1>
-          <p className="text-gray-500 text-sm mt-2 tracking-wider">Admin Panel</p>
+        <div className="flex flex-col items-center justify-center mb-8">
+          <CavenroLogo iconSize={40} />
+          <p className="text-gray-500 text-xs mt-2 tracking-widest uppercase">Admin Portal</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

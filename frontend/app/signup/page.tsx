@@ -7,7 +7,7 @@ import SignUpForm from '@/components/SignUpForm'
 export default async function SignUpPage() {
   let siteData: any = null
   try { siteData = await getSiteData() } catch {}
-  const nav    = siteData?.navbar ?? { logo: 'ZEPHYR', links: [] }
+  const nav    = siteData?.navbar ?? { logo: 'CAVENRO', links: [] }
   const footer = siteData?.footer ?? {}
   return (
     <main>

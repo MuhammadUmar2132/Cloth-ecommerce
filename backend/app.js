@@ -31,7 +31,7 @@ app.use('/api/orders',      orderRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ success: true, message: 'Zephyr API is running', timestamp: new Date().toISOString() });
+  res.json({ success: true, message: 'CAVENRO API is running', timestamp: new Date().toISOString() });
 });
 
 // 404 handler

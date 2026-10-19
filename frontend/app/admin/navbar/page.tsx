@@ -12,7 +12,7 @@ interface NavLink {
 }
 
 export default function NavbarAdmin() {
-  const [logo, setLogo] = useState('ZEPHYR')
+  const [logo, setLogo] = useState('CAVENRO')
   const [links, setLinks] = useState<NavLink[]>([])
   const [loading, setLoading] = useState(false)
   const [fetching, setFetching] = useState(true)
@@ -21,7 +21,7 @@ export default function NavbarAdmin() {
   const fetchData = useCallback(async () => {
     try {
       const data = await getSiteData()
-      setLogo(data.navbar?.logo || 'ZEPHYR')
+      setLogo(data.navbar?.logo || 'CAVENRO')
       // Only show top-level links (no nested dropdown editing here for simplicity)
       const topLinks = (data.navbar?.links || []).map((l: any) => ({
         id: l.id || Date.now().toString(),

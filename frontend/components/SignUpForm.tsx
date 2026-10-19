@@ -77,7 +77,7 @@ export default function SignUpForm() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="font-serif text-2xl font-bold text-primary uppercase tracking-[0.2em]">Create Account</h1>
-          <p className="text-gray-400 text-sm mt-2">Join ZEPHYR today</p>
+          <p className="text-gray-400 text-sm mt-2">Join CAVENRO today</p>
         </div>
 
         <form onSubmit={handle} className="border border-gray-100 p-8 space-y-4">

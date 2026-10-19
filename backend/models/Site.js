@@ -36,7 +36,7 @@ const siteSchema = new mongoose.Schema(
       default: true,
     },
     navbar: {
-      logo: { type: String, default: 'ZEPHYR' },
+      logo: { type: String, default: 'CAVENRO' },
       links: [navLinkSchema],
     },
     hero: {
@@ -52,12 +52,12 @@ const siteSchema = new mongoose.Schema(
       textColor: { type: String, default: '#ffffff' },
     },
     seo: {
-      siteTitle:          { type: String, default: 'ZEPHYR | Premium Pakistani Menswear Fabrics' },
-      titleTemplate:      { type: String, default: '%s | ZEPHYR' },
-      description:        { type: String, default: 'Discover premium quality menswear fabrics — blended, cotton, winter, and seasonal collections from ZEPHYR Textiles, Lahore.' },
-      keywords:           { type: String, default: 'menswear fabric, Pakistani fabric, blended fabric, cotton fabric, winter fabric, Zephyr Textiles, Lahore fabric' },
-      ogTitle:            { type: String, default: 'ZEPHYR | Premium Pakistani Menswear Fabrics' },
-      ogDescription:      { type: String, default: 'Shop the finest menswear fabrics in Pakistan. Blended, Cotton, Winter & Eid collections available.' },
+      siteTitle:          { type: String, default: 'CAVENRO | Premium Luxury Menswear Fabrics' },
+      titleTemplate:      { type: String, default: '%s | CAVENRO' },
+      description:        { type: String, default: 'Discover premium quality menswear fabrics — blended, cotton, winter, and seasonal collections from CAVENRO Textiles.' },
+      keywords:           { type: String, default: 'menswear fabric, Pakistani fabric, blended fabric, cotton fabric, winter fabric, CAVENRO Textiles, luxury fabrics' },
+      ogTitle:            { type: String, default: 'CAVENRO | Premium Luxury Menswear Fabrics' },
+      ogDescription:      { type: String, default: 'Shop the finest menswear fabrics. Blended, Cotton, Winter & Eid collections available.' },
       ogImage:            { type: String, default: '' },
       twitterCard:        { type: String, default: 'summary_large_image' },
       canonical:          { type: String, default: 'https://yourdomain.com' },
@@ -65,17 +65,17 @@ const siteSchema = new mongoose.Schema(
       googleVerification: { type: String, default: '' },
     },
     footer: {
-      companyName: { type: String, default: 'ZEPHYR Textiles Ltd.' },
+      companyName: { type: String, default: 'CAVENRO Textiles Ltd.' },
       address: { type: String, default: 'Lahore, Pakistan' },
       phone: { type: String, default: '+92-300-0000000' },
-      email: { type: String, default: 'info@zephyr.com.pk' },
+      email: { type: String, default: 'info@cavenro.com' },
       quickLinks: [quickLinkSchema],
       infoLinks: [quickLinkSchema],
       social: {
         facebook: { type: String, default: '' },
         instagram: { type: String, default: '' },
       },
-      copyright: { type: String, default: '© 2024 ZEPHYR Textiles Ltd. All rights reserved.' },
+      copyright: { type: String, default: '© 2024 CAVENRO Textiles Ltd. All rights reserved.' },
     },
   },
   { timestamps: true }

@@ -1,0 +1,29 @@
+<svg width="240" height="70" viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cavenroGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#e5c875" />
+      <stop offset="45%" stopColor="#c9a84c" />
+      <stop offset="100%" stopColor="#8d6f22" />
+    </linearGradient>
+    <linearGradient id="cavenroNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e" />
+      <stop offset="100%" stopColor="#16213e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Monogram Crest -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Diamond -->
+    <path d="M30 2 L58 30 L30 58 L2 30 Z" fill="url(#cavenroNavyGrad)" stroke="url(#cavenroGoldGrad)" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Inner Accent -->
+    <path d="M30 8 L52 30 L30 52 L8 30 Z" fill="none" stroke="url(#cavenroGoldGrad)" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/>
+    <!-- Sculpted 'C' Monogram -->
+    <path d="M41 19 C 36 14, 24 14, 19 20 C 13 27, 13 34, 19 41 C 24 47, 36 47, 41 42 L 37 38 C 34 42, 26 42, 23 38 C 19 34, 19 27, 23 23 C 26 19, 34 19, 37 23 Z" fill="url(#cavenroGoldGrad)"/>
+    <!-- Center Jewel Dot -->
+    <polygon points="30,28 32,30 30,32 28,30" fill="#fbf5db"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="75" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="800" letter-spacing="4" fill="#1a1a2e">CAVENRO</text>
+  <text x="76" y="52" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="600" letter-spacing="3.5" fill="#c9a84c">HAUTE TEXTILES</text>
+</svg>

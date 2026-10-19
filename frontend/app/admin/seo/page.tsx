@@ -20,8 +20,8 @@ interface SeoData {
 }
 
 const defaultSeo: SeoData = {
-  siteTitle: 'ZEPHYR | Premium Pakistani Menswear Fabrics',
-  titleTemplate: '%s | ZEPHYR',
+  siteTitle: 'CAVENRO | Premium Luxury Menswear Fabrics',
+  titleTemplate: '%s | CAVENRO',
   description: '',
   keywords: '',
   ogTitle: '',
@@ -106,7 +106,7 @@ export default function SeoAdmin() {
               value={form.siteTitle}
               onChange={e => set('siteTitle', e.target.value)}
               className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-              placeholder="ZEPHYR | Premium Pakistani Menswear Fabrics"
+              placeholder="CAVENRO | Premium Luxury Menswear Fabrics"
             />
             <p className="text-xs text-gray-400 mt-1">Shown in browser tab and search results. Keep under 60 characters.</p>
           </div>
@@ -118,9 +118,9 @@ export default function SeoAdmin() {
               value={form.titleTemplate}
               onChange={e => set('titleTemplate', e.target.value)}
               className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary font-mono"
-              placeholder="%s | ZEPHYR"
+              placeholder="%s | CAVENRO"
             />
-            <p className="text-xs text-gray-400 mt-1"><code className="bg-gray-100 px-1 rounded">%s</code> is replaced with the page title (e.g. &ldquo;Heritage | ZEPHYR&rdquo;)</p>
+            <p className="text-xs text-gray-400 mt-1"><code className="bg-gray-100 px-1 rounded">%s</code> is replaced with the page title (e.g. &ldquo;Heritage | CAVENRO&rdquo;)</p>
           </div>
 
           <div>
@@ -193,7 +193,7 @@ export default function SeoAdmin() {
               value={form.ogTitle}
               onChange={e => set('ogTitle', e.target.value)}
               className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-              placeholder="ZEPHYR | Premium Pakistani Menswear Fabrics"
+              placeholder="CAVENRO | Premium Luxury Menswear Fabrics"
             />
           </div>
 
@@ -272,7 +272,7 @@ export default function SeoAdmin() {
           <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
             <p className="text-xs text-gray-400 mb-1 font-mono">{form.canonical || 'https://yourdomain.com'}</p>
             <p className="text-blue-700 text-lg font-medium leading-tight hover:underline cursor-default truncate">
-              {form.siteTitle || 'ZEPHYR | Premium Pakistani Menswear Fabrics'}
+              {form.siteTitle || 'CAVENRO | Premium Luxury Menswear Fabrics'}
             </p>
             <p className="text-gray-600 text-sm mt-1 leading-snug line-clamp-2">
               {form.description || 'Your meta description will appear here...'}

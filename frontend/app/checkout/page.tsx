@@ -11,8 +11,8 @@ export default async function CheckoutPage() {
   try { siteData = await getSiteData() } catch {
     siteData = {
       announcement: '', announcementVisible: false,
-      navbar: { logo: 'ZEPHYR', links: [] },
-      footer: { phone: '+923001234567', companyName: 'ZEPHYR', email: '', address: '', quickLinks: [], infoLinks: [], social: {}, copyright: '' },
+      navbar: { logo: 'CAVENRO', links: [] },
+      footer: { phone: '+923001234567', companyName: 'CAVENRO', email: '', address: '', quickLinks: [], infoLinks: [], social: {}, copyright: '' },
     }
   }
 

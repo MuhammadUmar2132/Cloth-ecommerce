@@ -1,6 +1,11 @@
 node_modules/
 
 .env
+.env*.local
+
+# Next.js build
+.next/
+out/
 
 # Build output
 dist/

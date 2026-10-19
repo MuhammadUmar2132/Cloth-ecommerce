@@ -18,9 +18,9 @@ async function getSeoData() {
 export async function generateMetadata(): Promise<Metadata> {
   const seo = await getSeoData()
 
-  const title       = seo?.siteTitle       || 'ZEPHYR | Premium Pakistani Menswear Fabrics'
-  const description = seo?.description     || 'Discover premium quality menswear fabrics from ZEPHYR Textiles, Lahore.'
-  const keywords    = seo?.keywords        || 'menswear fabric, Pakistani fabric, Zephyr Textiles'
+  const title       = seo?.siteTitle       || 'CAVENRO | Premium Luxury Menswear Fabrics'
+  const description = seo?.description     || 'Discover premium quality menswear fabrics from CAVENRO Textiles.'
+  const keywords    = seo?.keywords        || 'menswear fabric, Pakistani fabric, Cavenro Textiles, luxury fabrics'
   const ogImage     = seo?.ogImage         || ''
   const canonical   = seo?.canonical       || 'https://yourdomain.com'
   const robots      = seo?.robots          || 'index, follow'
@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
       default: title,
-      template: seo?.titleTemplate || '%s | ZEPHYR',
+      template: seo?.titleTemplate || '%s | CAVENRO',
     },
     description,
     keywords,
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: 'website',
       locale: 'en_PK',
       url: canonical,
-      siteName: 'ZEPHYR',
+      siteName: 'CAVENRO',
       title: seo?.ogTitle || title,
       description: seo?.ogDescription || description,
       ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: title }] } : {}),

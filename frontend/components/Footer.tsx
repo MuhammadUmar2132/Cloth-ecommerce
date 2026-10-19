@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CavenroLogo from '@/components/CavenroLogo'
 
 interface FooterLink {
   label: string
@@ -30,9 +31,9 @@ export default function Footer({ data }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
-            <h3 className="font-serif text-xl font-bold tracking-[0.3em] uppercase mb-4">
-              ZEPHYR
-            </h3>
+            <div className="mb-4">
+              <CavenroLogo variant="light" iconSize={32} />
+            </div>
             <p className="text-gray-300 text-sm mb-1 leading-relaxed">{data.companyName}</p>
             <p className="text-gray-400 text-sm mb-1">{data.address}</p>
             <p className="text-gray-400 text-sm mb-1">

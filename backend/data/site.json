@@ -2,7 +2,7 @@
   "announcement": "ORDERS PLACED AFTER 21ST MAY WILL BE DELIVERED AFTER EID",
   "announcementVisible": true,
   "navbar": {
-    "logo": "ZEPHYR",
+    "logo": "CAVENRO",
     "links": [
       { "id": "1", "label": "Home", "href": "/" },
       { "id": "2", "label": "Collections", "href": "/collections", "dropdown": [
@@ -34,10 +34,10 @@
     "textColor": "#ffffff"
   },
   "footer": {
-    "companyName": "ZEPHYR Textiles Ltd.",
+    "companyName": "CAVENRO Textiles Ltd.",
     "address": "Lahore, Pakistan",
     "phone": "+92-300-0000000",
-    "email": "info@zephyr.com.pk",
+    "email": "info@cavenro.com",
     "quickLinks": [
       { "label": "Home", "href": "/" },
       { "label": "Summer Collection", "href": "/collections/summer" },
@@ -50,9 +50,9 @@
       { "label": "Refund Policy", "href": "/refund" }
     ],
     "social": {
-      "facebook": "https://facebook.com/zephyr",
-      "instagram": "https://instagram.com/zephyr"
+      "facebook": "https://facebook.com/cavenro",
+      "instagram": "https://instagram.com/cavenro"
     },
-    "copyright": "© 2024 ZEPHYR Textiles Ltd. All rights reserved."
+    "copyright": "© 2024 CAVENRO Textiles Ltd. All rights reserved."
   }
 }
